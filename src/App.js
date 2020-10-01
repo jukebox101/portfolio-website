@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from './LandingPage';
+import Resume from './Resume';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello World
-      </header>
-    </div>
+      <div>
+        <LandingPage />
+        <Resume />        
+      </div>
+
   );
 }
 
