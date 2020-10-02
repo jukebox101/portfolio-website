@@ -1,6 +1,8 @@
 import React from 'react';
 import LandingPage from './LandingPage';
 import Resume from './Resume';
+import Contact from './Contact';
+import Projects from './Projects';
 import { 
   BrowserRouter as Router, 
   Switch, 
