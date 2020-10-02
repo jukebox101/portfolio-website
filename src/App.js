@@ -1,16 +1,27 @@
 import React from 'react';
 import LandingPage from './LandingPage';
 import Resume from './Resume';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { 
+  BrowserRouter as Router, 
+  Switch, 
+  Route 
+} from 'react-router-dom';
 
 
 function App() {
   return (
+    <Router>
       <div>
-        <LandingPage />
-        <Resume />        
-      </div>
-
+        <Switch> 
+          <Route exact path='/resume'>
+            <Resume/>
+          </Route>
+          <Route exact path='/'>
+            <LandingPage/>
+          </Route>            
+        </Switch>        
+      </div>      
+    </Router>
   );
 }
 
