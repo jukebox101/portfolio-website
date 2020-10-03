@@ -1,13 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import LandingPage from './LandingPage';
 import Resume from './Resume';
 import Contact from './Contact';
 import Projects from './Projects';
-import { 
-  BrowserRouter as Router, 
-  Switch, 
-  Route 
-} from 'react-router-dom';
+
 
 
 function App() {
@@ -15,6 +13,12 @@ function App() {
     <Router>
       <div>
         <Switch> 
+          <Route exact path='/contact'>
+            <Contact/>
+          </Route>
+          <Route exact path='/projects'>
+              <Projects/>
+            </Route>  
           <Route exact path='/resume'>
             <Resume/>
           </Route>
